@@ -1,0 +1,3 @@
+[submodule "ata_base"]
+	path = ata_base
+	url = git@github.com:lynphoenix/ata_base.git
