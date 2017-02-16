@@ -8,7 +8,6 @@ Ava平台是一个分布式机器学习云平台，由DataFlow, Learning Engine,
 
 ## DataFlow
 * 分布式数据ETL
-* 数据文件接口
 * 内置数据预处理函数模块
 * 内置数据转换/放大函数模块
 * batch/flow模式支持
