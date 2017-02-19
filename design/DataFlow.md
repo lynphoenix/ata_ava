@@ -9,7 +9,6 @@
 * Rich Data Prepropessing Methods
 * Graph Programming Interface and Multi-Language APIs
 
-
 ## Data Format
 
 * 用于分类的图像Label:
@@ -43,3 +42,19 @@
           }
         }
       }
+
+
+## 工程进度
+### Stage 1: MVP 2017.02.20 - 2017.02.26
+#### 分布式处理机制 - 在Kirk上基于X-Spark，实现以下功能
+* 任务分割
+* 并行处理
+* 任务完成度管理
+* Failure Restart
+
+#### 工作类型 - 各工作以API的形式提供，分布式平台只需要调用对应的API接口
+* 下载 / 上传
+* 图像预处理 - 基于Keras，实现Mean-Std，模糊、旋转、镜像、缩放、平移、裁剪等功能
+* Q-Pipeline：从日志流抓数据，整理用于重弄新训练的过程
+  * 日志采集 - 采集日志，并将日志保存到存储。这一步在qlogview机器上完成
+  * Fetch - 读取日志记录，将图片fetch到存储，将url和label保存为[标准格式的json-log](# Data Format)

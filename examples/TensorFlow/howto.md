@@ -14,11 +14,11 @@
 
 * 分别在和ps和worker服务器上运行分布式训练的ps和worker脚本，开始训练
 
-  python inception/imagenet_distributed_train.py --batch_size=64 --data_dir=/disk2/data/ILSVRC2012/records/ --job_name="worker" --task_id=0 --ps_hosts='10.130.170.184:2222' --worker_hosts='10.130.224.136:2222,10.130.224.149:2222' --GLOG_logtostderr=1 --train_dir=/disk2/imagenet-train/
+  python inception/imagenet_distributed_train.py --batch_size=128 --data_dir=/disk2/data/ILSVRC2012/records/ --job_name="worker" --task_id=0 --ps_hosts='10.130.170.184:2222' --worker_hosts='10.130.224.136:2222,10.130.224.149:2222' --GLOG_logtostderr=1 --train_dir=/disk2/imagenet-train/
 
-  python inception/imagenet_distributed_train.py --batch_size=64 --data_dir=/disk2/data/ILSVRC2012/records/ --job_name="worker" --task_id=1 --ps_hosts='10.130.170.184:2222' --worker_hosts='10.130.224.136:2222,10.130.224.149:2222' --GLOG_logtostderr=1 --train_dir=/disk2/imagenet-train/
+  python inception/imagenet_distributed_train.py --batch_size=128 --data_dir=/disk2/data/ILSVRC2012/records/ --job_name="worker" --task_id=1 --ps_hosts='10.130.170.184:2222' --worker_hosts='10.130.224.136:2222,10.130.224.149:2222' --GLOG_logtostderr=1 --train_dir=/disk2/imagenet-train/
 
-  python inception/imagenet_distributed_train.py --batch_size=64 --data_dir=/disk2/data/ILSVRC2012/records/ --job_name="ps" --task_id=0 --ps_hosts='10.130.170.184:2222' --worker_hosts='10.130.224.136:2222,10.130.224.149:2222' --GLOG_logtostderr=1 --train_dir=/disk2/imagenet-train/
+  python inception/imagenet_distributed_train.py --batch_size=128 --data_dir=/disk2/data/ILSVRC2012/records/ --job_name="ps" --task_id=0 --ps_hosts='10.130.170.184:2222' --worker_hosts='10.130.224.136:2222,10.130.224.149:2222' --GLOG_logtostderr=1 --train_dir=/disk2/imagenet-train/
 
 
 ### Tips
