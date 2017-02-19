@@ -57,4 +57,4 @@
 * 图像预处理 - 基于Keras，实现Mean-Std，模糊、旋转、镜像、缩放、平移、裁剪等功能
 * Q-Pipeline：从日志流抓数据，整理用于重弄新训练的过程
   * 日志采集 - 采集日志，并将日志保存到存储。这一步在qlogview机器上完成
-  * Fetch - 读取日志记录，将图片fetch到存储，将url和label保存为[标准格式的json-log](#Data-Format)
+  * Fetch - 读取日志记录，将图片fetch到存储，将url和label保存为[标准格式的json-log](#data-format)
